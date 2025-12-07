@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e9f2ed;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+
+}
+
+.navbar{
+    background:#e9f2ed;
+    height: 40px;
+}
+
+.nav-link{
+    color: #194D25;
+    font-weight: 500;
+}
+
+.navbar-brand{
+    color: #194D25;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:20px;
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #669933 0%, #66CCCC 100%);
+    color: white;
+    border-radius: 15px;
+}
+
+.header-title{
+    gap: 10px;
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+/* 留言表单样式 */
+.message-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    max-height: 600px;
+}
+
+.form-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+input{
+    padding: 14px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea{
+    resize: vertical;
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 16px;
+    min-height: 150px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #669933;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #669933 0%, #66CCCC 100%);
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(102, 204, 204, 0.25);
+}
+
+.submit-btn:active {
+    transform: translateY(-3px);
+}
+
+.submit-btn:disabled {
+    background: #cbd5e0;
+    cursor: not-allowed;
+}
+
+  /* 留言列表样式 */
+.messages-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.messages-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.messages-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.message-count {
+    background: #edf2f7;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.messages-list {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.message {
+    padding: 25px;
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.message:hover {
+    background-color: #f8fafc;
+    transform: translateX(5px);
+}
+
+.message:last-child {
+    border-bottom: none;
+}
+
+.message-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.message-author {
+    font-weight: 700;
+    color: #2d3748;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.message-time {
+    color: #718096;
+    font-size: 15px;
+}
+
+.message-content {
+    color: #4a5568;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 60px 20px;
+    color: #a0aec0;
+    font-size: 17px;
+}
+
+/* 底部信息 */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #718096;
+    font-size: 14px;
+    padding: 20px;
+}
+
+
+
+

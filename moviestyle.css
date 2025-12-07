@@ -1,0 +1,141 @@
+body{
+    background: #e9f2ed;
+    width: 1700px !important;
+}
+
+.navbar{
+    background:#e9f2ed;
+    height: 40px;
+
+}
+
+.nav-link{
+    color: #194D25;
+    font-weight: 500;
+}
+
+.navbar-brand{
+    color: #194D25;
+    font-weight: 500;
+}
+
+.jumbotron{
+    width: 100%;
+    margin: 0px;
+    padding: 70px 100px;
+    height: 400px;
+    background: linear-gradient(135deg, #669933 0%, #66CCCC 100%);
+    color: white;
+    border-radius: 0px;
+}
+
+.jumbotron-title{
+    font-size: 100px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.jumbotron-body{
+    font-family: Microsoft YaHei;
+    letter-spacing: 1px;
+    line-height: 120%;
+    font-size:20px;
+    margin:10px;
+}
+
+.grid-layout{
+    box-sizing: content-box;
+    width: 78%;
+    background: #f0faf4;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 25px;
+    display: grid;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "a a b c d"
+        "a a e e e"
+        "f g e e e"
+        "h h i i j"
+        "h h i i k";
+}
+
+.grid-item:nth-child(1){ grid-area: a;}
+.grid-item:nth-child(5){ grid-area: e;}
+.grid-item:nth-child(8){ grid-area: h;}
+.grid-item:nth-child(9){ grid-area: i;}
+
+.grid-item{
+    background: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.big{
+    height:400px;
+    background: #FFFFFF;
+    border-radius: 0px;
+}
+
+.small{
+    height:200px;
+    background: #FFFFFF;
+    border-radius: 0px;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item .card-body{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-item:hover .card-body {
+    transform: translateY(0);
+}
+
+.card-body h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.card-body p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+/* 底部信息 */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #718096;
+    font-size: 14px;
+    padding: 20px;
+}
+
